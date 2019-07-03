@@ -5,9 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name:"Hello JCSON",
+    age:18,
+    students:[
+      { id: 110, name: '库里1', age: 10 },
+      { id: 111, name: '库里2', age: 11 },
+      { id: 112, name: '库里3', age: 12 }
+    ],
+    count:0
   },
+  // 这个也是可以的
+  // click(){
 
+  // }
+  click:function(){
+    this.setData({
+      count:this.data.count + 1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

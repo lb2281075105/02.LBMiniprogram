@@ -1,2 +1,23 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+<!-- 1. 小程序数据绑定:Mustache语法 -->
+
+
+<view>{{name}}</view>
+<view>我的年龄:{{age}}</view>
+<!--  Mustache语法 还可以做计算 -->
+<view>我的年龄:{{age + 20}}</view>
+<view>{{students[0]}}</view>
+<view>{{students[0].name}}</view>
+
+<!-- 2. 列表展示 -->
+
+<view wx:for='students'>{{item}}</view>
+
+<view wx:for='{{students}}' wx:key='key'>name :{{item.name}} age :{{item.age}} id :{{item.id}}</view>
+
+<!-- 2. 列表展示 -->
+
+<view >当前计数 :{{count}}</view>
+
+<button size='mini' bindtap='click'> + </button>
