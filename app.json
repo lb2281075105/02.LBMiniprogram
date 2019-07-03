@@ -1,6 +1,11 @@
 {
   "pages": [
-    "pages/home/home",
-    "pages/about/about"
-  ]
+        "pages/argument/argument",
+        "pages/about/about",
+        "pages/home/home",
+        
+        "pages/eventtype/eventtype"
+      
+  ],
+  "sitemapLocation": "sitemap.json"
 }

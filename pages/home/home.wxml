@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class='box' bindtap='onViewClick'></view>
+<view class='box' catchtap='onViewClick'></view>
+<view class='box' bind:click='onViewClick'></view>

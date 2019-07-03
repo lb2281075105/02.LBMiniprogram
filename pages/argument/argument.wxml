@@ -1,0 +1,15 @@
+<!--pages/argument/argument.wxml-->
+<text>pages/argument/argument.wxml</text>
+
+<view class='box' bindtap='onviewClick' data-nickname="{{name}}">{{name}}</view>
+
+<view class='title'>
+  <block wx:for="{{titles}}" wx:key="index">
+      <view class='item' 
+            bindtap='onItemClick'
+            data-title="{{item}}"
+            data-index="{{index}}">
+        {{item}}
+      </view>
+  </block>
+</view>

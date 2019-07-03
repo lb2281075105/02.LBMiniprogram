@@ -1,1 +1,7 @@
 /* pages/home/home.wxss */
+.box {
+  width: 200rpx;
+  height: 200rpx;
+  background: red;
+  margin-top: 20rpx;
+}

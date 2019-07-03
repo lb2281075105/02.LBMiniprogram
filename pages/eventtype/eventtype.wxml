@@ -1,0 +1,15 @@
+<!--pages/eventtype/eventtype.wxml-->
+<text>pages/eventtype/eventtype.wxml</text>
+
+<view class='box'
+      bindtouchstart='onTouchStart'
+      bindtouchmove='onTouchMove'
+      bindtouchend='onTouchEnd'
+      bindtouchcancel='onTouchCancle'
+      bindtap='onTap'
+      bindlongpress="onLongPress"
+></view>
+
+<view id='outer' class='outer' bindtap='onOuterTap'>
+  <view id='inner' class='inner' bindtap='onInnerTap'></view>
+</view>
