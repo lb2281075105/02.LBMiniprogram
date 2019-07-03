@@ -1,30 +1,27 @@
 App({
-
-  /**
-   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
-   */
-  onLaunch: function () {
-    
+  globalData: {
+    name: 'kobe',
+    age: 30
   },
 
-  /**
-   * 当小程序启动，或从后台进入前台显示，会触发 onShow
-   */
-  onShow: function (options) {
-    
+  // 绑定生命周期函数
+  // 只有冷启动时, 才会执行onLaunch, 热启动是不会执行
+  onLaunch() {
+    console.log('小程序启动: onLaunch')
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res)
+        const nickName = res.userInfo.nickName;
+        const avatarUrl = res.userInfo.avatarUrl;
+        console.log('姓名:', nickName);
+        console.log('头像:', avatarUrl);
+      }
+    })
   },
-
-  /**
-   * 当小程序从前台进入后台，会触发 onHide
-   */
-  onHide: function () {
-    
+  onShow() {
+    console.log('小程序显示: onShow')
   },
-
-  /**
-   * 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
-   */
-  onError: function (msg) {
-    
+  onHide() {
+    console.log('小程序隐藏: onHide')
   }
 })
