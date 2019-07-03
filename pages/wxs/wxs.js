@@ -1,11 +1,12 @@
-// pages/about/about.js
+// pages/wxs/wxs.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    price: 2.8888,
+    time: 1557839601
   },
 
   /**

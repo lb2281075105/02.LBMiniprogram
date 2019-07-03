@@ -1,0 +1,35 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+
+<!-- 1.wxs的定义方式 -->
+<wxs module="info">
+  var name = "coderwhy";
+  var age = 18;
+
+  var sayHello = function(name) {
+    return '你好 ' + name;
+  }
+
+  module.exports = {
+    name: name,
+    age: age,
+    sayHello: sayHello
+  }
+</wxs>
+
+<view>{{info.name}}</view>
+<view>{{info.age}}</view>
+<view>{{info.sayHello('kobe')}}</view>
+
+<!-- 2.导入其他的wxs文件, 才能使用 -->
+<!-- src: 必须使用相对路径 -->
+<wxs src="../../utils/math.wxs" module="math"/>
+
+<view>{{math.sum(10, 20)}}</view>
+<view>{{math.mul(10, 20)}}</view>
+
+<!-- 3.展示价格和事件 -->
+<wxs src="../../utils/format.wxs" module="format"/>
+
+<view>价格:{{format.priceFormat(price, 2)}}</view>
+<view>时间:{{format.dateFormat(time, 'yyyy/MM/dd hh:mm:ss')}}</view>

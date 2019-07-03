@@ -1,0 +1,34 @@
+<!--pages/condition/condition.wxml-->
+<text>pages/condition/condition.wxml</text>
+
+<!-- 1.基本使用 -->
+<!-- 1.1.一个条件 -->
+<view wx:if="{{false}}">Hello World</view>
+<view><button size='mini' bindtap='onToggle'>开关</button></view>
+<view wx:if="{{isShow}}">是否渲染</view>
+
+<!-- 1.2.多个条件 -->
+<view>您的分数: {{score}}</view>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+<button size='mini' bindtap='onIncrement'>+5</button>
+
+<!-- 2.hidden属性 -->
+<view><button size='mini' bindtap='onHidden'>开关</button></view>
+<view hidden='{{isHidden}}'>通过hidden属性控制显示和隐藏</view>
+
+<!-- 3.wx:if和hidden有什么区别 -->
+<view><button size='mini' bindtap='onChange'>开关</button></view>
+<!-- 隐藏式, 将display设置为none -->
+<view hidden='{{!show}}'>hidden控制</view>
+<!-- 隐藏时, 直接从DOM树中移除掉 -->
+<view wx:if='{{show}}'>wx:if控制</view>
+
+<!-- 
+疑问: 在开发中, 如何去选择?
+  1.如果对应的渲染组件, 切换的不是非常频繁, 那么可以使用wx:if
+  2.如果对应的渲染组件, 需要进行频繁的切换, 那么就使用hidden属性控制
+-->
+

@@ -1,0 +1,45 @@
+<!--pages/template/template.wxml-->
+<text>pages/template/template.wxml</text>
+
+<!-- 1.模板的基本使用 -->
+<!-- 1.1.定义模板 -->
+<template name="message">
+  <view>
+    <text>Hello World</text>
+    <view>你好小程序</view>
+    <button size='mini'>按钮</button>
+  </view>
+</template>
+
+<!-- 1.2.使用模板 -->
+<template is="message"/>
+<template is="message"/>
+
+<!-- 2.给模板传递 -->
+<template name="msgData">
+  <view>
+    <button size='mini'>{{btnInfo}}</button>
+    <text>{{textInfo}}</text>
+  </view>
+</template>
+
+<template is="msgData" data="{{btnInfo: '按钮', textInfo: '哈哈哈'}}"/>
+<template is="msgData" data="{{btnInfo: '改变', textInfo: '呵呵呵'}}"/>
+// ... 取出info 中所有属性
+<template is="msgData" data="{{...info}}"/>
+
+<!-- 3.根据不同的数据, 使用不同的模板 -->
+<template name="odd">
+  <view>奇数: {{num}}</view>
+</template>
+
+<!-- template相当于是一种wxml代码的复用。
+block是将代码包裹起来的一个标签 -->
+<template name="even">
+  <view>偶数: {{num}}</view>
+</template>
+
+<block wx:for="{{nums}}" wx:key="index">
+  <template is="{{item % 2 == 0 ? 'even' : 'odd'}}" data="{{num: item}}"/>
+</block>
+

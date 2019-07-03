@@ -1,0 +1,11 @@
+.large {
+  font-size: 60rpx;
+}
+
+.normal {
+  font-size: 32rpx;
+}
+
+.small {
+  font-size: 24rpx;
+}

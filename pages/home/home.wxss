@@ -1,1 +1,12 @@
 /* pages/home/home.wxss */
+@import "./wxss/message.wxss";
+@import "./wxss/box.wxss";
+
+.title {
+  color: #fff;
+}
+
+.content {
+  border: 10px solid red;
+  background: orange;
+}

@@ -1,0 +1,12 @@
+var sum = function(num1, num2) {
+  return num1 + num2
+}
+
+var mul = function(num1, num2) {
+  return num1 * num2
+} 
+
+module.exports = {
+  sum: sum,
+  mul: mul
+}

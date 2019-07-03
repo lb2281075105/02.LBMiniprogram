@@ -1,0 +1,9 @@
+/* pages/wxml/wxml.wxss */
+.title1 {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.active {
+  color: red;
+}

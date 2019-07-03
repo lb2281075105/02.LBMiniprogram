@@ -1,0 +1,16 @@
+<!--pages/wxml/wxml.wxml-->
+<text>pages/wxml/wxml.wxml</text>
+
+<!-- 1.Mustache语法 -->
+<!-- 1.1.直接使用变量 -->
+<view>{{message}}</view>
+<view>你好啊,{{name}}</view>
+
+<!-- 1.2.也可以是一个表达式: 显示表达式的结果 -->
+<view>{{age >= 18 ? '成年人': '未成年人'}}</view>
+<view>{{age + 20}}</view>
+<view>{{age + '岁'}}</view>
+
+<!-- 1.3.Mustache绑定属性 -->
+<button size='mini' bindtap="onChange">改变</button>
+<view class='title1 {{isActive ? "active": ""}}'>哈哈哈</view>

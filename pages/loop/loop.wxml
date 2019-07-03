@@ -1,0 +1,47 @@
+<!--pages/loop/loop.wxml-->
+<text>pages/loop/loop.wxml</text>
+
+<!-- 1.wx:for基本使用 -->
+<!-- 1.1.wx:for遍历数组 -->
+<!-- <view wx:for="{{[1, 2, 3, 4]}}">{{index}}-{{item}}</view>
+<view wx:for="{{movies}}">{{index}}-{{item}}</view> -->
+
+<!-- 1.2.wx:for遍历字符串 -->
+<!-- <view wx:for="coderwhy">{{index}}-{{item}}</view> -->
+
+<!-- 1.3.遍历数字 -->
+<!-- <view wx:for="{{10}}">{{item}}</view> -->
+
+<!-- 2.block标签 -->
+<!-- <view wx:if="{{isShow}}">哈哈哈</view>
+<view wx:if="{{isShow}}">呵呵呵</view>
+<view wx:if="{{isShow}}">嘿嘿嘿</view>
+<view wx:if="{{isShow}}">嘻嘻嘻</view> -->
+
+<!-- <block wx:if="{{isShow}}">
+  <view>哈哈哈</view>
+  <view>呵呵呵</view>
+  <view>嘿嘿嘿</view>
+  <view>嘻嘻嘻</view>
+</block>
+
+<block wx:for="{{3}}">
+  <view>哈哈哈</view>
+  <view>呵呵呵</view>
+  <view>嘿嘿嘿</view>
+  <view>嘻嘻嘻</view>
+</block> -->
+
+<!-- 3.index-item起别名, 绑定key -->
+<!-- 注意: key必须是字符串/数字 -->
+
+<!-- 频繁切换：用 hidden。
+偶尔切换：用 wx:if。 -->
+<block wx:for="{{movies}}" 
+       wx:for-index="i" 
+       wx:for-item="movie" 
+       wx:key="*this">
+  <view class='message' hidden=''>
+    {{i}}-{{movie}}
+  </view>
+</block>

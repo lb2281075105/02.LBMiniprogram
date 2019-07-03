@@ -1,2 +1,20 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+<!-- 1.样式的三种写法 -->
+<!-- 
+  1.全局样式
+  2.页面样式
+  3.行内样式
+ -->
+<view class='title content' style='text-decoration: underline; background: blue;'>Hello World</view>
+
+<!-- 2.rpx单位 -->
+<view class='message1'>Hello World</view>
+<view class='message2'>Hello World</view>
+
+<view class='box1'></view>
+<view class='box2'></view>
+
+<view class='large'>你好小程序</view>
+<view class='normal'>你好小程序</view>
+<view class='small'>你好小程序</view>
