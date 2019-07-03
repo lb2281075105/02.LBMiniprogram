@@ -1,2 +1,17 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 1.基本的使用 -->
+<view><text>Hello World</text></view>
+<view><text>你好,小程序</text></view>
+<view><text>你好啊</text></view>
+
+<!-- 2.Text组件的属性 -->
+<!-- 2.1.当前文本是否可以被选中 -->
+<text selectable='{{true}}'>Hello Coderwhy\n</text>
+
+<!-- 2.2.space: 决定空格以什么方式显示 -->
+<text space='ensp'>Hello World\n</text>
+<text space='emsp'>Hello World\n</text>
+<text space='nbsp'>Hello World\n</text>
+
+<!-- 2.3.decode: 是否解码 -->
+<text decode='{{true}}'>3 &gt; 2</text>

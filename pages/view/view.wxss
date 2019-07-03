@@ -1,0 +1,5 @@
+/* pages/view/view.wxss */
+.hover {
+  background: red;
+  color: #fff;
+}

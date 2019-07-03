@@ -1,6 +1,16 @@
 {
   "pages": [
-    "pages/home/home",
-    "pages/about/about"
+        "pages/about/about",
+        "pages/home/home",
+        
+        "pages/button/button",
+        
+        "pages/view/view",
+        
+        "pages/image/image",
+        
+        "pages/input/input",
+        "pages/scroll/scroll"
+  
   ]
 }

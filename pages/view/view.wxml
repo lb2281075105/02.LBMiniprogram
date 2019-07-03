@@ -1,0 +1,8 @@
+<!--pages/view/view.wxml-->
+<text>pages/view/view.wxml</text>
+
+<view bindtap='onViewClick'>哈哈哈</view>
+<view>
+  <button size='mini' type="primary">按钮</button>
+</view>
+<view hover-class='hover'>呵呵呵</view>

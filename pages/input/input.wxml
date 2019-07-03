@@ -1,0 +1,26 @@
+<!--pages/input/input.wxml-->
+<text>pages/input/input.wxml</text>
+
+<!-- 1.input基本使用 -->
+<input/>
+
+<!-- 2.value属性 -->
+<input value="{{name}}"/>
+
+<!-- 3.type属性: 键盘类型 -->
+<input type="number"/>
+
+<!-- 4.password: true -->
+<input password='{{true}}'/>
+
+<!-- 5.placeholder -->
+<input placeholder='请输入账号' placeholder-class='holder'/>
+
+<!-- 6.confirm-type -->
+<input confirm-type='send'/>
+
+<!-- 7.事件监听 -->
+<input bindinput='onInput'
+       bindfocus='onFocus'
+       bindblur='onBlur'
+       bindconfirm='onConfirm'/>
