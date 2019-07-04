@@ -1,2 +1,19 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<text>Hello World</text>
+<view class='title'>你好,小程序</view>
+<view>{{message}}</view>
+
+<!-- 1.简单的跳转 -->
+<navigator url='../detail/detail?name=why&age=18'>跳转到详情页</navigator>
+
+<!-- 2.跳转到tab页面 -->
+<navigator url='../about/about' open-type='switchTab'>跳转到关于</navigator>
+
+<!-- 3.重新启动,加载某一个页面 -->
+<navigator url="../comment/comment" >重新显示评论</navigator>
+
+<!-- 4.跳转到详情页, 携带数据 -->
+<navigator url='../detail/detail?name={{message}}&age=18'>跳到详情页,并且携带数据</navigator>
+
+<!-- 5.通过button进行页面跳转 -->
+<button size='mini' bindtap='onBtnClick'>跳转到详情页</button>

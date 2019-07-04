@@ -1,0 +1,15 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+
+<view>姓名: {{name}}</view>
+<view>年龄: {{age}}</view>
+
+<!-- 跳转到评论 -->
+<!-- <navigator url='../comment/comment' open-type='redirect'>跳转到评论页</navigator> -->
+<navigator url='../comment/comment'>跳转到评论页</navigator>
+
+<!-- 返回上一级 -->
+<navigator open-type='navigateBack'>返回上一级</navigator>
+
+<!-- 通过button进行页面返回 -->
+<button size='mini' bindtap='onBack'>返回</button>
