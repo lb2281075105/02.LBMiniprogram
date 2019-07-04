@@ -1,0 +1,5 @@
+/* components/w-button/w-button.wxss */
+.btn {
+  background: purple;
+  color: #fff;
+}

@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-cpn": "/components/w-cpn/w-cpn",
+    "w-button": "/components/w-button/w-button",
+    "w-tab-control": "/components/w-tab-control/w-tab-control",
+    "w-slot": "/components/w-slot/w-slot",
+    "w-mslot": "/components/w-mslot/w-mslot"
+  }
 }

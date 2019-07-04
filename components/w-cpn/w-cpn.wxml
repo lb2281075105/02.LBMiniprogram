@@ -1,0 +1,5 @@
+<!--components/w-cpn/w-cpn.wxml-->
+<view class='title'>{{title}}</view>
+<w-button/>
+<button size='mini' bindtap='onBtnClick'>另外按钮</button>
+<view class='content'>{{content}}</view>

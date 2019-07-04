@@ -1,0 +1,6 @@
+<!--components/w-mslot/w-mslot.wxml-->
+<view>多个插槽的头部</view>
+<view>内容1: <slot name="content1"></slot></view>
+<view>内容2: <slot name="content2"></slot></view>
+<view>内容3: <slot name="content3"></slot></view>
+<view>多个插槽的尾部</view>

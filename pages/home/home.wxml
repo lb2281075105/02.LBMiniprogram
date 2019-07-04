@@ -1,2 +1,43 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<text>Hello World</text>
+<view class='title'>你好,小程序</view>
+<w-button/>
+
+<w-cpn title="哈哈哈" 
+       content="我是哈哈哈内容"
+       bind:cpnclick="cpnClick"></w-cpn>
+<view>------------------------------------</view>
+<w-cpn title="呵呵呵" content="我是呵呵呵内容"></w-cpn>
+<view>------------------------------------</view>
+<w-cpn title="嘿嘿嘿" content='我是嘿嘿嘿内容'></w-cpn>
+
+<view>---------- tab-control组件 ----------</view>
+<w-tab-control titles="{{['流行', '新款', '精选']}}"
+               bind:titleclick="titleClick"/>
+v
+<w-slot>
+  <text>我是显示的插入文本</text>
+</w-slot>
+
+<w-slot>
+  <button>我是插入的按钮</button>
+</w-slot>
+
+<w-slot>
+  <progress percent='60'/>
+</w-slot>
+
+<w-slot>
+  <slider value='20'/>
+</w-slot>
+
+
+<view>---------- 多个插槽 ----------</view>
+<button size='mini'bindtap="onRemove">移除</button>
+<view wx:if="{{isShow}}">
+  <w-mslot>
+    <text slot="content1">哈哈哈哈</text>
+    <button slot="content2" size='mini'>呵呵呵</button>
+    <progress slot="content3"/>
+  </w-mslot>
+</view>
